@@ -1,2 +1,0 @@
-# Practicing Git
-# Python-Practice
