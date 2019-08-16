@@ -1,14 +1,15 @@
 # Note
 
 1. Index Sort Practice_using lambda
-     sorted( source, key = lambda k : x[k] )
+     
+     Algorithm : sorted( source, key = lambda k : x[k] )
 
      k is every elements in source.
      " : x[k] " is  an assignment.
-     lambda k is scanning every elements in source.
+     "lambda k" suggest  scanning every elements in source (list).
 
-     Therefore,  "lambda k : x[k]" means every k can be assigned an  assignment x[k], and then they 
-     will form a group and its type is similar to "link-list" . 
+     Therefore,  "lambda k : x[k]" means every k can be assigned an value x[k], and then they 
+     form a group whose type is similar to "link-list" . 
 
-     The function "sorted" work to sort list according to x[k], and the group k-x[k] will move together. 
-     Finally, we can print out the result.
+     The function "sorted" is able to sort list according to x[k] value, and the group k-x[k] will move 
+     together. Finally, we can print out the result.
