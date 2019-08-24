@@ -7,15 +7,14 @@ def ask():
 	ice={"a":"全冰","b":"半冰","c":"去冰"}
 	Set=[tyPe,size,sugar,ice]
 	question=["請問你要什麼飲料：a:紅茶,b:綠茶,c:奶茶","請問你要的大小是：a:中杯,b:大杯","請問你的甜度是：a:全糖,b:少糖,c:無糖","請問你的冰塊是：a:全冰,b:半冰,c:少冰"]
-	answer=[0]*5
-	ans=''
+	answer=[]
 	for i in range(4):
 		print(question[i])
 		check=input()
 		if check in Set[i]:
-			answer[i]=Set[i][check]
+			answer.append(Set[i][check])
 		else:
-			answer[i]=-1
+			answer.append(-1)
 			break
 	return answer
 
@@ -41,7 +40,6 @@ def bag(cup):
 		bag_number=0
 	return bag_number
 
-
 #####I'm main, and I'm man.#######
 basic=ask()
 if -1 in basic:
@@ -55,4 +53,4 @@ else:
 	total_2=bag(cup)
 	total_3=recy(cup)
 	Total=total_1+total_2-total_3
-	print("你的飲料是{}杯{}，需要{}個袋子，經過環保杯使用折讓{}元後，總共是{}元。".format(cup,drink_print,int(total_2/2),total_3,Total))
+	print("你的飲料是{}杯{}，需要{}個袋子，使用環保杯共可折讓{}元，最後總共是{}元。".format(cup,drink_print,int(0.5*total_2),total_3,Total))
