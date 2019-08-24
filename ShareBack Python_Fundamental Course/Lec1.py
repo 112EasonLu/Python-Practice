@@ -3,7 +3,7 @@
 # notice that "1name" is not acceptable because head of num.
 # 駝峰命名法： evenOne evenTwo evenTree
 # 底線命名法： even_one even_two even_three
-# "=" is "assign"
+# "=" is "assignment operator"
 
 #part 1
 Name1=input("What is your name1?")
