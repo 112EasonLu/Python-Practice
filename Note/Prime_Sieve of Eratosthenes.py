@@ -14,4 +14,4 @@ class prime:
 
 #if __name__ == "__main__":
 #	print(eratosthenes(120))
-print(prime().eratosthenes(100))
+print(prime().eratosthenes(190823))
