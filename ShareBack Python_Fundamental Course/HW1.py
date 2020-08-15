@@ -68,7 +68,7 @@ def recy(cup): #is the discount of the cup due to environment friendly
 	check_recy=input()
 	if check_recy.isdigit(): #check input
 		if int(check_recy) <=cup:
-			recy_price=check_recy*5
+			recy_price=int(check_recy)*5
 		else:
 			recy_price=cup*5
 	else: recy_price=False #input is not acceptable
@@ -78,7 +78,7 @@ def bag(cup): #is the cost of the bag
 	print("你需要袋子嗎(1元/pc)？ 需要(每袋裝6杯，少於6杯以6杯計)：1,不需要：0")
 	check_bag=input()
 	if check_bag=="1":
-		bag_number=(math.ceil(cup/6))
+		bag_number=(math.ceil(int(cup)/6))
 	elif check_bag=="0":
 		bag_number=0
 	else: bag_number=False #input is not acceptable
@@ -117,7 +117,8 @@ else:
 #------------Bags and discounts------------
 	bag_price=bag(cup)
 	envir_discount=recy(cup)
-	
+	print(bag_price,envir_discount)
+
 	if bag_price and envir_discount:
 		Total=total_drink_price+bag_price-envir_discount
 

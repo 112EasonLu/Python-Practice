@@ -1,0 +1,178 @@
+luyishengde-MacBook-Pro:~ luyisheng$ python2
+-bash: python2: command not found
+luyishengde-MacBook-Pro:~ luyisheng$ python
+Python 3.6.8 (v3.6.8:3c6b436a57, Dec 24 2018, 02:04:31) 
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> quit()
+luyishengde-MacBook-Pro:~ luyisheng$  python3 --version
+Python 3.6.8
+luyishengde-MacBook-Pro:~ luyisheng$  python --version
+Python 3.6.8
+luyishengde-MacBook-Pro:~ luyisheng$ open ~/.bash_profile
+luyishengde-MacBook-Pro:~ luyisheng$ python
+Python 3.6.8 (v3.6.8:3c6b436a57, Dec 24 2018, 02:04:31) 
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> quit()
+luyishengde-MacBook-Pro:~ luyisheng$ python
+Python 3.6.8 (v3.6.8:3c6b436a57, Dec 24 2018, 02:04:31) 
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> quit()
+luyishengde-MacBook-Pro:~ luyisheng$ python
+Python 3.6.8 (v3.6.8:3c6b436a57, Dec 24 2018, 02:04:31) 
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> quit()
+luyishengde-MacBook-Pro:~ luyisheng$ sudo rm -rf /Library/Frameworks/Python.framework/Versions/3.6
+Password:
+Sorry, try again.
+Password:
+luyishengde-MacBook-Pro:~ luyisheng$ sudo rm -rf /Library/Frameworks/Python.framework/Versions/3.6
+luyishengde-MacBook-Pro:~ luyisheng$ 
+luyishengde-MacBook-Pro:~ luyisheng$ sudo rm -rf /Library/Frameworks/Python.framework/Versions/3.6
+luyishengde-MacBook-Pro:~ luyisheng$ 
+luyishengde-MacBook-Pro:~ luyisheng$ python
+-bash: /Library/Frameworks/Python.framework/Versions/3.6/bin/python3.6: No such file or directory
+luyishengde-MacBook-Pro:~ luyisheng$ sudo rm -rf “/Applications/Python 3.6”
+luyishengde-MacBook-Pro:~ luyisheng$ cd /usr/local/bin/ 
+luyishengde-MacBook-Pro:bin luyisheng$ 
+luyishengde-MacBook-Pro:bin luyisheng$ ls -l /usr/local/bin | grep ‘/Library/Frameworks/Python.framework/Versions/3.6’ 
+luyishengde-MacBook-Pro:bin luyisheng$ 
+luyishengde-MacBook-Pro:bin luyisheng$  brew prune 
+Error: Unknown command: prune
+luyishengde-MacBook-Pro:bin luyisheng$ open ~/.bash_profile
+luyishengde-MacBook-Pro:bin luyisheng$ which python2
+/usr/local/bin/python2
+luyishengde-MacBook-Pro:bin luyisheng$ python2
+Python 2.7.16 (v2.7.16:413a49145e, Mar  2 2019, 14:32:10) 
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> quit()
+luyishengde-MacBook-Pro:bin luyisheng$ python
+-bash: /Library/Frameworks/Python.framework/Versions/3.6/bin/python3.6: No such file or directory
+luyishengde-MacBook-Pro:bin luyisheng$ open ~/.bash_profile
+luyishengde-MacBook-Pro:bin luyisheng$ source ~/.bash_profile
+luyishengde-MacBook-Pro:bin luyisheng$ python
+-bash: /Library/Frameworks/Python.framework/Versions/3.6/bin/python3.6: No such file or directory
+luyishengde-MacBook-Pro:bin luyisheng$ source ~/.bash_profile
+luyishengde-MacBook-Pro:bin luyisheng$ python
+Python 2.7.16 (v2.7.16:413a49145e, Mar  2 2019, 14:32:10) 
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> quit()
+luyishengde-MacBook-Pro:bin luyisheng$ python3
+Python 3.6.8 (v3.6.8:3c6b436a57, Dec 24 2018, 02:04:31) 
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> quit()
+luyishengde-MacBook-Pro:bin luyisheng$ python
+Python 2.7.16 (v2.7.16:413a49145e, Mar  2 2019, 14:32:10) 
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> quit()
+luyishengde-MacBook-Pro:bin luyisheng$ open ~/.bash_profile
+luyishengde-MacBook-Pro:bin luyisheng$  python --version
+Python 2.7.16
+luyishengde-MacBook-Pro:bin luyisheng$  python3 --version
+Python 3.6.8
+luyishengde-MacBook-Pro:bin luyisheng$ source ~/.bash_profile
+luyishengde-MacBook-Pro:bin luyisheng$  python --version
+Python 3.6.8
+
+
+
+# 前言
+好像要進入正題之前都要有一些前言XD
+其實近年來，直譯語言成為眾多程式撰寫新手的第一首選，而MATLAB只要下載後就已經幫大家準備好環境，讓大家可以直接進行撰寫及執行，但因為需要高額費用，現在大多是學術研究單位或者公司有辦法支持，對於平民(XD)的我們當然轉向近來很熱門且相對是無需付太多費用的Python來當作入門。然而要開發Python當然就是要先建立好開發環境囉！
+由於現在比較少針對MacOS說明的安裝文章，以下將針對MacOS系統做講解。
+
+# 安裝
+[](https://i.imgur.com/C2Jn550.png)
+其實安裝法不外乎有人透過Homebrew或者conda來幫忙安裝，但其實你也可以透過官網來安裝最直接，以下將從官網直接下載安裝為教學！另外安裝前不要忘記先確認你的你的電腦設備行不行囉！
+
+1. 到[官網](https://www.python.org/downloads/mac-osx/)選擇自己想要安裝的版本
+
+2. 打開 .pkg執行檔，一直下一步就可以完成囉
+
+3. 如果你是安裝python 2輸入以下就可以看到你的版本，而MacOS一般內建下載的就是Python 2
+``` 
+$ python--version
+Python 2.7.x
+```
+
+但如果你是安裝python 3輸入以下就可以看到你的版本，
+``` 
+$ python3--version
+Python 3.x.x
+```
+
+**一般還是建議安裝python3，因為官方已於2018年3月已經公告python2將於2020年1月1日起中止更新服務(End of life)，雖然兩者落差不大，但因為有些python2語法python3是無法轉譯的，還是建議大家學習python3吧！**
+
+# 那個..每一次都要打python3有點麻煩耶！
+迷錯！其實很多人一開始都會有一個疑惑，為啥我不能直接在終端機鍵入python就是python3了～其實這樣的做法也是可以讓使用者自由選擇使用哪個版本！以下提供一個作法，不但不會把python2刪除，又可以輕鬆方便進入python3的shell，一下我們以python3.6為例。
+
+1. 打開終端機，輸入以下指令會打開一個文件檔案
+```
+$ cd ~
+$ open ~/.bash_profile
+``` 
+
+2. 接著尋找到python3.6的路徑並在下面貼上以下兩行，儲存後關閉
+``` 
+export PATH=${PATH}:/Library/Frameworks/Python.framework/Versions/3.6/bin
+alias python="/Library/Frameworks/Python.framework/Versions/3.6/bin/python3.6"
+``` 
+
+3. 接下來確認有無問題及版本是否為3.6(你希望的版本)
+```
+$ source ~/.bash_profile
+$ python--version
+Python 3.6.x
+``` 
+
+**恭喜你完成最麻煩的一個部分了！**
+
+# 那到底怎麼開發程式？
+到這裡其實已經完成很大部分了！你的環境已經大致上建立完成，但是到底怎麼開發程式呢？以下大概有三種方法：
+
+1. 直接在終端機開啟shell執行
+```
+$ python
+Python 3.6.8 (v3.6.8:3c6b436a57, Dec 24 2018, 02:04:31) 
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+``` 
+
+只要看到「>>>」你就是成功進入到python的shell了！這種開發方法就是你每次輸入一行就會立刻直譯一次，雖然方便，但其實在開法一個專案或者練習的時候，而且debug比較困難！較適用於單純簡單操作或者計算時使用！一般來說比較常用下面的兩個方法來開發
+
+2. 使用文字編輯器撰寫內容，再執行Source code
+常見的文字編輯器有：Notepad++, Sublime Text, Vim等，可以協助我們開發Source code，再將Source code存為.py檔(這可以視為一個模組)，再利用終端機進行執行，以下為範例code，並存為hello.py放在資料夾中。
+```
+# This is my first python code saved in the file.
+# Its file name is hello.py!
+print("Hello World! Hello Python!")
+``` 
+```
+$ python hello.py
+Hello World! Hello Python!
+``` 
+
+3. 利用整合開發環境(IDE)進行編輯及執行
+這應該是最多人使用的方法了！以下簡介幾個常見IDE或者網路開發資源給大家：
+(1)[PyCharm](https://www.jetbrains.com/pycharm/download/#section=mac)
+這是一個橫跨macOS/Windows/Linux三個平台且專給Python專用的IDE，不管對於新手或者專業開發者，都是一個方便的環境！
+(2)[Anaconda](https://www.anaconda.com/distribution/#download-section)
+我想這個是近來最有名的開發平台了！可以說是新手最好用的懶人大包！裡面有Spyder,Jupyter Notebook, VS Code(這算是半個IDE)等幾個大家愛用的開發python平台！有興趣大家可以找一個適合自己的開發器。但Anaconda最大的缺點就是很肥，會吃掉很多硬碟空間!
+(3)[Redeo](https://rodeo.yhat.com/)
+
+
+(2)
+()[Google Colab](https://colab.research.google.com)
+Google提供的一個開發平台，可以將你開發的程式儲存在個人的Google Drive，也可以隨時隨地開發你的程式，也可以很方便地分享Code給其他人！
+
+
+2. 
+...其實稍早打的一大篇都不見了，之後會再慢慢補回來給大家參考的！

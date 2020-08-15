@@ -10,6 +10,7 @@ print(students[0]) #-> ['john', 'A', 15],
 print(students[0][1]) #-> A
 
 # 用 lambda 排序概念很像是這樣
+for i in range(len(students)):
     print(students[i]) # 可以知道各個element 代表的值
 
 # 若用第一個排序，他的 x 相當一element或者說裡面第幾個東西，有點像是index的感覺，：後面是比較標準
