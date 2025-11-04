@@ -70,11 +70,11 @@ def add_indicators(df_all):
         delta = g["Close"].diff()
         gain = delta.where(delta > 0, 0.0)
         loss = -delta.where(delta < 0, 0.0)
-        avg_gain5 = gain.rolling(5, min_periods=1).mean()
-        avg_loss5 = loss.rolling(5, min_periods=1).mean().replace(0, np.nan)
+        avg_gain5 = gain.ewm(5, min_periods=1).mean()
+        avg_loss5 = loss.ewm(5, min_periods=1).mean().replace(0, np.nan)
         rs5 = avg_gain5 / avg_loss5
-        avg_gain10 = gain.rolling(10, min_periods=1).mean()
-        avg_loss10 = loss.rolling(10, min_periods=1).mean().replace(0, np.nan)
+        avg_gain10 = gain.ewm(10, min_periods=1).mean()
+        avg_loss10 = loss.ewm(10, min_periods=1).mean().replace(0, np.nan)
         rs10 = avg_gain10 / avg_loss10
         g["RSI5"] = 100 - (100 / (1 + rs5))
         g["RSI10"] = 100 - (100 / (1 + rs10))
@@ -434,3 +434,4 @@ def find_signals(df_all, check_func, strat_name="S1", window_len=10):
 
 if __name__ == "__main__":
     main()
+    
